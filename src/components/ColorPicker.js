@@ -13,7 +13,7 @@ function ColorPicker() {
   };
 
   return (
-    <section className="ColorPicker__section  scale-up-center" id="colorpicker" >
+    <section className="ColorPicker__section" id="colorpicker" >
       <div className="ColorPicker__screen" style={passStyles}>
         <p>{myColor ? myColor : null}</p>
       </div>

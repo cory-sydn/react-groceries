@@ -32,7 +32,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: color-dodge;
   background-color: rgba(202, 183, 77, 0.522);
-  
+
 }
 
 .App {
@@ -247,6 +247,7 @@ button:hover {
   width: 100%;
   box-shadow: 0 -3px 2px 0.4px #0007;
   z-index: 1;
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) ;
 }
 
 .Counter_section * {
@@ -258,12 +259,17 @@ button:hover {
   margin-top: 0.5rem ;
 }
 
+.Counter_buttons button {
+  margin-inline: 0.25rem;
+}
+
 .ColorPicker_button {
   cursor: pointer;
   margin: .5rem;
 }
 
 .itemList__shadow-inset {
+  padding-top: 8px;
   width: 100%;
 }
 
@@ -278,13 +284,6 @@ button:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #474545;
-}
-
-/* Section opens with "Color" link with FaEyeDropper icon */
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
-    both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .ColorPicker__section {
@@ -357,6 +356,14 @@ button:hover {
   margin: 2rem;
   -webkit-animation: rotate-top 1s linear infinite both;
   animation: rotate-top 1s linear infinite both;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  box-shadow: 0 0 0 30px var(--bg-list) inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--bg-list) inset !important;
 }
 
 @keyframes rotate-top {
